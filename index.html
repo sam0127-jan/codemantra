@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auth App</title>
+    <style>
+      /* Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+      }
+
+      .container {
+        background: #ffffff;
+        padding: 40px 60px;
+        border-radius: 20px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        width: 320px;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+        color: #333;
+      }
+
+      .links a {
+        display: inline-block;
+        margin: 10px;
+        padding: 10px 25px;
+        border-radius: 30px;
+        text-decoration: none;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        color: white;
+        font-weight: 600;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .links a:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(118, 75, 162, 0.3);
+      }
+
+      footer {
+        margin-top: 20px;
+        font-size: 0.85rem;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to Auth App</h1>
+      <div class="links">
+        <a href="/signup.html">Signup</a>
+        <a href="/signin.html">Signin</a>
+      </div>
+      <footer>Secure authentication system 🔐</footer>
+    </div>
+  </body>
+</html>
+
