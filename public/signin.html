@@ -3,15 +3,114 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Signin | Codemantra</title>
+  <title>Sign In | CodeMantra Internships</title>
+
+  <style>
+    /* Reset default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+    }
+
+    .signin-container {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      padding: 40px;
+      width: 350px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .signin-container h1 {
+      margin-bottom: 25px;
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    .signin-container input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+      outline: none;
+      font-size: 14px;
+    }
+
+    .signin-container input[type="text"],
+    .signin-container input[type="password"] {
+      background: rgba(255, 255, 255, 0.2);
+      color: #fff;
+      letter-spacing: 0.5px;
+    }
+
+    .signin-container input::placeholder {
+      color: #ddd;
+    }
+
+    .signin-container button {
+      width: 100%;
+      padding: 12px;
+      background: #00c6ff;
+      border: none;
+      border-radius: 8px;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .signin-container button:hover {
+      background: #0072ff;
+      transform: translateY(-2px);
+    }
+
+    .signin-container p {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .signin-container a {
+      color: #00c6ff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .signin-container a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 400px) {
+      .signin-container {
+        width: 90%;
+        padding: 25px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Signin Page</h1>
-  <form action="/signin" method="POST">
-    <input type="text" name="username" placeholder="Enter Username" required><br>
-    <input type="password" name="password" placeholder="Enter Password" required><br>
-    <button type="submit">Signin</button>
-  </form>
-  <p>New user? <a href="/signup.html">Signup here</a></p>
+  <div class="signin-container">
+    <h1>Welcome Back 👋</h1>
+    <form action="/signin" method="POST">
+      <input type="text" name="username" placeholder="Enter Username" required>
+      <input type="password" name="password" placeholder="Enter Password" required>
+      <button type="submit">Sign In</button>
+    </form>
+    <p>New to CodeMantra? <a href="/signup.html">Create Account</a></p>
+  </div>
 </body>
 </html>
