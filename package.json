@@ -1,8 +1,9 @@
 {
-  "name": "codemantra-auth",
+  "name": "auth-app",
   "version": "1.0.0",
-  "description": "Simple signup and signin app using Node.js and MongoDB",
+  "description": "Signup and Signin system using Node.js and MongoDB",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "start": "node server.js"
   },
@@ -15,3 +16,4 @@
     "mongoose": "^7.6.0"
   }
 }
+
